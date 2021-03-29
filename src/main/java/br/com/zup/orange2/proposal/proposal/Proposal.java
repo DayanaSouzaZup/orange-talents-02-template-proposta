@@ -2,6 +2,7 @@ package br.com.zup.orange2.proposal.proposal;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,6 +25,7 @@ public class Proposal {
 	@NotNull
 	@Valid
 	@CpfCnpj
+	@Column(unique = true)
 	private String document;
 
 	@NotNull

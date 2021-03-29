@@ -34,9 +34,17 @@ public class NewProposalDto {
 
 	}
 
-	public NewProposalDto(@NotBlank @Valid String document, @NotBlank @Email String email, @NotBlank String name,
-			@NotBlank String address, @NotBlank @Positive BigDecimal salary) {
-		super();
+//	public NewProposalDto(@NotBlank @Valid String document, @NotBlank @Email String email, @NotBlank String name,
+//			@NotBlank String address, @NotBlank @Positive BigDecimal salary) {
+//		super();
+//		this.document = document;
+//		this.email = email;
+//		this.name = name;
+//		this.address = address;
+//		this.salary = salary;
+//	}
+
+	public NewProposalDto(Proposal proposal) {
 		this.document = document;
 		this.email = email;
 		this.name = name;
