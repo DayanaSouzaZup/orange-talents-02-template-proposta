@@ -25,7 +25,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import javassist.NotFoundException;
 
 @RestController
-@RequestMapping("/proposals")
+@RequestMapping("/proposal")
 public class NewProposalController {
 
 	private final Logger logger = LoggerFactory.getLogger(NewProposalController.class);

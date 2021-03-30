@@ -6,4 +6,5 @@ public interface ProposalRepository extends CrudRepository<Proposal, Long> {
 
 	boolean existsByDocument(String document);
 
+	Proposal findByDocument(String document);
 }
