@@ -46,4 +46,9 @@ public class ProposalAnalysisDto {
 		return idProposal;
 	}
 
+	@Override
+	public String toString() {
+		return "ProposalAnalysisDto [document=" + document + ", name=" + name + ", idProposal=" + idProposal + "]";
+	}
+
 }
